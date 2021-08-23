@@ -1,0 +1,449 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Rasa', serif, 'Open Sans', sans-serif, 'Lobster', cursive;
+    font-size: 36px;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.background {
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 400px;
+}
+
+.paddington {
+    float: left;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 40px 0px 0px 150px;
+}
+
+.nav {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+    padding-top: 60px;
+}
+
+
+.nav li {
+    
+    list-style-type: none;
+    padding-right: 40px;
+    display: inline;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.nav a:hover {
+    color: #FFD770;
+    transition: 0.5s;
+}
+
+.title {
+    position: absolute;
+    right: 0;
+    left: 0;
+    color: #FFFFFF;
+    line-height: 0.9;
+    margin: 0 auto;
+}
+
+.stroke {
+    width: 110px;
+    padding-top: 46px;
+}
+.title-one {
+    font-size: 30px;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+.title-two {
+    font-size: 80px;
+    font-weight: 700;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+
+.background-wood {
+    background-image: url(../img/woodbanner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 220px;
+}
+
+.grid {
+    text-align: center;
+    display: grid;
+    grid-template-areas: "a b c d";
+    grid-gap: 2px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+
+.grid h3 {
+    font-family: 'Open Sans';
+    font-size: 26px;
+    font-weight: bold;
+    color: #F2B132;
+
+}
+.grid p {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.grid-one {
+    grid-area: a;
+}
+
+.grid-two {
+    grid-area: b;
+}
+
+.grid-three {
+    grid-area: c;
+}
+
+.grid-four {
+    grid-area: d;
+}
+
+.rating {
+    width: 65px;
+    height: 64px;
+    fill: #FFFFFF;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.rating:hover {
+    fill:#F2B132;
+    transition: 0.5s;
+}
+
+.tray {
+    width: 70px;
+    height: 70px;
+    fill: #FFFFFF;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.tray:hover {
+    fill:#F2B132;
+    transition: 0.5s;
+}
+.chef {
+    width: 75px;
+    height: 75px;
+    fill: #FFFFFF;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.chef:hover {
+    fill:#F2B132;
+    transition: 0.5s;
+}
+
+.delivery {
+    width: 75px;
+    height: 75px;
+    fill: #FFFFFF;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.delivery:hover {
+    fill:#F2B132;
+    transition: 0.5s;
+}
+
+
+.kitchenbanner {
+    background-image: url(../img/paddingtonkitchen.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 430px;
+}
+
+.paddingtonkitchen {
+    padding: 20px 150px;
+}
+
+.kitchenbanner h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: left;
+    
+}
+
+.kitchenbanner p {
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.grid-photo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid-photo-item {
+    height: 100%;
+    background: rgb(204, 204, 204);  /* У блока, оборачивающего картинку при наведении будет просвечивать черный фон */
+    overflow: hidden;  /* Ограничиваем видиую область */
+}
+
+.grid-photo-item img {
+    width: 100%;
+    height: 100%;
+    background-color: black; 
+    opacity: 1;
+    transition: opacity 100ms linear, transform 100ms linear;  /* Плавное изменение прозрачности и увеличения */
+    display: block; /* Убираем полосу под картинкий */
+}
+
+.grid-photo-item:hover img {
+   opacity: 0.9; /* Высветляем картинку, но она становится темнее, так как под ней черный фон */
+   transform: scale(1.05);
+}
+
+.contactbanner {
+    background-color: #EADFDC;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 82px;
+}
+
+.box-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 150px;
+}
+
+.box-contact p {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.button-tel {
+    background-color: #FFFFFF;
+    outline: none;
+    border: 2px solid #6D677D;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    transition: 0.3s;
+}   
+
+.button-tel:hover {
+    border: 2px solid #D44118;
+    background-color: rgb(255, 234, 191);
+    transition: 0.3s;
+}
+
+.button-tel img {
+    padding-top: 7px;
+    margin: 0 auto;
+}
+
+.tel {
+    height: 40px;
+    width: 250px;
+    outline: none;
+    border: 2px solid #6D677D; 
+    border-radius: 30px;
+    font-size: 18px;
+    font-style: italic;
+    color: #6D677D;
+    text-align: center;
+  
+}
+
+
+.p1 {
+    color: #D44118;
+}
+
+.p2 {
+    color: #6D677D;
+}
+
+.vegan-banner {
+    background-image: url(../img/veganmenu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 430px;
+}
+
+.vegan-banner {
+    padding: 20px 180px;
+}
+
+.vegan-banner h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: right;
+    
+}
+
+.vegan-banner p {
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: right;
+}
+
+
+.lunch-banner {
+    background-image: url(../img/lunchbanner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 430px;
+}
+
+.lunch-banner {
+    padding: 20px 180px;
+}
+
+.lunch-banner  h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: right;
+    
+}
+
+.lunch-banner  p {
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: right;
+}
+
+.contactbanner-footer {
+    background-color: #D44118;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 82px;
+}
+
+
+.box-contact p {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.button-tel {
+    background-color: #FFFFFF;
+    outline: none;
+    border: 2px solid #6D677D;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    transition: 0.3s;
+}   
+
+.button-tel:hover {
+    border: 2px solid #F2B132;
+    background-color: rgb(255, 254, 195);
+    transition: 0.3s;
+}
+
+.button-tel img {
+    padding-top: 7px;
+    margin: 0 auto;
+}
+
+.tel {
+    height: 40px;
+    width: 250px;
+    outline: none;
+    border: 2px solid #6D677D; 
+    border-radius: 30px;
+    font-size: 18px;
+    font-style: italic;
+    color: #6D677D;
+    text-align: center;
+  
+}
+
+
+.p1-footer {
+    color: #FFFFFF;
+}
+
+.p2-footer {
+    color: #000000;
+}
+
+
+
+/*
+FOOTER CONTACTS
+*/
+
+
+
+
+
+
+
+
+
+.box-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 12px;
+    margin: 0;
+    padding: 5px;
+}
+
+.footer {
+    background-color:#000000;
+    padding: 10px 0;
+}
+
